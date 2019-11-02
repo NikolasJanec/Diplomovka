@@ -10,10 +10,13 @@ class LuckyController
 {
     public function number()
     {
-        $number = random_int(0, 100);
+        try {
+            $number = random_int(0, 100);
+        } catch (\Exception $e) {
+        }
 
         return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
+            '<html lang=""><body>Lucky number: '.$number.'</body></html>'
         );
     }
 }
