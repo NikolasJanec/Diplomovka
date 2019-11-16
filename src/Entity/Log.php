@@ -114,6 +114,41 @@ class Log
     /**
      * @return mixed
      */
+    public function getGpsLongitude()
+    {
+        return $this->gpsLongitude;
+    }
+
+    /**
+     * @param mixed $gpsLongitude
+     */
+    public function setGpsLongitude($gpsLongitude): void
+    {
+        $this->gpsLongitude = $gpsLongitude;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGpsLatitude()
+    {
+        return $this->gpsLatitude;
+    }
+
+    /**
+     * @param mixed $gpsLatitude
+     */
+    public function setGpsLatitude($gpsLatitude): void
+    {
+        $this->gpsLatitude = $gpsLatitude;
+    }
+
+
+
+
+    /**
+     * @return mixed
+     */
     public function getStatus()
     {
         return $this->status;
@@ -329,6 +364,15 @@ class Log
         $this->role = $role;
 
         return $this;
+    }
+
+    public function fillCreatedAt()
+    {
+        $this->createdAt = new \DateTime();
+    }
+    public function fillUpdatedAt()
+    {
+        $this->updatedAt = new \DateTime();
     }
 
 

@@ -147,5 +147,14 @@ class TypeLog
         return $this;
     }
 
+    public function fillCreatedAt()
+    {
+        $this->createdAt = new \DateTime();
+    }
+    public function fillUpdatedAt()
+    {
+        $this->updatedAt = new \DateTime();
+    }
+
 
 }

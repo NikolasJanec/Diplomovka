@@ -132,6 +132,15 @@ class MobileDevice
         $this->privateKey = $privateKey;
     }
 
+    public function fillCreatedAt()
+    {
+        $this->createdAt = new \DateTime();
+    }
+    public function fillUpdatedAt()
+    {
+        $this->updatedAt = new \DateTime();
+    }
+
     /**
      * @return mixed
      */
@@ -175,6 +184,8 @@ class MobileDevice
 
         return $this;
     }
+
+
 
     /**
      * @return Collection|Log[]

@@ -1,4 +1,7 @@
 {
+    "defuse/php-encryption": {
+        "version": "v2.2.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -111,6 +114,12 @@
     "ocramius/proxy-manager": {
         "version": "2.2.3"
     },
+    "paragonie/constant_time_encoding": {
+        "version": "v2.3.0"
+    },
+    "paragonie/easyrsa": {
+        "version": "v0.5.2"
+    },
     "phpdocumentor/reflection-common": {
         "version": "2.0.0"
     },
@@ -119,6 +128,9 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
+    },
+    "phpseclib/phpseclib": {
+        "version": "2.0.23"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -131,6 +143,9 @@
     },
     "psr/log": {
         "version": "1.1.2"
+    },
+    "sarciszewski/php-future": {
+        "version": "0.4.2"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",

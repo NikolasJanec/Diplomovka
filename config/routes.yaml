@@ -7,3 +7,13 @@
 app_lucky_number:
   path: /lucky/number
   controller: App\Controller\LuckyController::number
+
+apiCreateMobileDevice:
+  path:                       /registerMobileDevice
+  defaults:                   { _controller: App\Controller\Api\MobileDeviceController:createAction }
+  methods:                    [POST]
+
+#apiCreateGpsMobileDevice:
+#  path:                       /gpsMobileDevice
+#  defaults:                   { _controller: App\Controller\Api\MobileDeviceController:createGpsAction }
+#  methods:                    [POST]
